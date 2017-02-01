@@ -14,7 +14,7 @@ h4 { font-size: 110%; }
 
 .front .node h1.front-heading { margin-bottom:0; font-weight:bold; }
 
-.node.node-teaser h2, .node.node-teaser a { margin-top:0; color:#494d4f;}
+.node.node-teaser h2 { margin-top:0; color:#494d4f;}	
 
 .subtitle { padding:5px 0 15px 0; font-size:18px; color:#494d4f; font-family: Myriad Pro,"Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; }
 
