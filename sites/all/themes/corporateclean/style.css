@@ -179,7 +179,7 @@ padding: 20px; overflow:hidden; margin:0 0 40px 0;
 */
 .testimonial { display: block; overflow: hidden; position: relative; clear:both; }
 
-.testimonial-inner { outline:none; border:1px solid #ffffff; 
+.testimonial-inner { outline:none;  
 -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; 
 padding: 20px; overflow:hidden; background:#22737e; margin:25px 0 0 0; font-style:italic;color:#ffffff; }
 
