@@ -178,10 +178,8 @@ padding: 20px; overflow:hidden; margin:0 0 40px 0;
 .testimonial { display: block; overflow: hidden; position: relative; clear:both; }
 
 .testimonial-inner { outline:none; border:1px solid #ffffff; 
--webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
-padding: 20px; overflow:hidden; background:#22737e; margin:25px 0 0 0; font-style:italic;color:#ffffff;
- /* shadow */
--webkit-box-shadow: 0 2px 3px #efefef inset;  -moz-box-shadow:0 2px 3px #efefef inset;  box-shadow:0 2px 3px #efefef inset; }
+-webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; 
+padding: 20px; overflow:hidden; background:#22737e; margin:25px 0 0 0; font-style:italic;color:#ffffff; }
 
 .testimonial-submitted { background: url("images/testimonial.png") no-repeat scroll 95% 0 transparent; text-align:right; padding:20px 0 0 0; }
 
