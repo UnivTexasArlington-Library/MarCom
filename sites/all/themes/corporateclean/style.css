@@ -44,7 +44,7 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 
 .submitted { margin:-15px 0 20px 0; font-size: 85%; text-transform: uppercase; }
 
-.region-sidebar-first .block h2, .region-sidebar-second .block h2 {  margin: 0 0 15px 0; padding:0 0 5px 0; }
+.region-sidebar-first .block h2, .region-sidebar-second .block h2 {  margin: 0 0 15px 0; padding:0 0 5px 0; color:#494d4f; }
 
 .region-content { line-height:155%; } 
 
@@ -56,6 +56,8 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 #header { clear:both; }
 
 #header-inside { margin: 0 auto; padding:30px 0; overflow:hidden; } 
+
+#header-inside-left .clearfix {text-align:right;}
 
 #header-menu { clear:both; }
 
