@@ -23,7 +23,7 @@ input, textarea, select { font-family: "Lucida Grande","Lucida Sans Unicode",Seg
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6,
 #footer-bottom h1, #footer-bottom h2, #footer-bottom h3, #footer-bottom h4, #footer-bottom h5, #footer-bottom h6 { text-shadow:none; }
 
-#footer-bottom ul.menu li {border-right: 1px solid #000000;}
+ul.secondary-menu li.first, #footer-bottom ul.menu li.first {border-right: 1px solid #000000;}
 
 p { margin:0 0 25px 0; }
 
