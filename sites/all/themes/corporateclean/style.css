@@ -454,7 +454,7 @@ li { display:list-item; }
 
 .item-list ul { margin:0 0 0.25em 1em; padding:0; }
 
-.item-list ul li { margin:0; padding:0 0 5px 5px;list-style-type:none; }
+.item-list ul li { margin:0; padding:0 0 5px 0;list-style-type:none; }
 
 ol.search-results { padding:0; }
 
