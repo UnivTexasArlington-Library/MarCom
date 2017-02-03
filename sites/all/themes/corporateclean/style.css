@@ -378,7 +378,7 @@ font-family: "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans
 /* 
 * Messages
 */
-div.messages.status { background:#52ac61; border:1px solid #46a055; padding:10px; margin:0 0 15px 0; color:#ffffff; }
+div.messages.status { background:#22737e; border:1px solid #46a055; padding:10px; margin:0 0 15px 0; color:#ffffff; }
 
 div.messages.error { background:#d30000; border:1px solid #b50000; padding:10px; margin:0 0 15px 0; color:#ffffff; }
 
