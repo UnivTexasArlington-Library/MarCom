@@ -2,7 +2,7 @@ body { font: 0.8em/165% "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica
 
 h1, h2, h3, h4, h5, h6 { margin:25px 0 20px 0; line-height:120%; text-shadow: 1px 1px 1px #EAF1EA; font-family: Myriad Pro,"Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; }
 
-h1 { font-size: 27px; margin:0 0 20px 0; }
+h1 { font-size: 24px; margin:0 0 20px 0; }
 
 h2 { font-size: 20px; color:#1487d4; font-weight:normal; }
 
@@ -182,7 +182,7 @@ padding: 20px; overflow:hidden; margin:0 0 40px 0;
 .testimonial { display: block; overflow: hidden; position: relative; clear:both; }
 
 .testimonial-inner { outline:none;  
--webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; 
+-webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; 
 padding: 20px; overflow:hidden; background:#22737e; margin:25px 0 0 0; font-style:italic;color:#ffffff; }
 
 .testimonial-submitted { background: url("images/testimonial.png") no-repeat scroll 95% 0 transparent; text-align:right; padding:20px 0 0 0; }
