@@ -1,6 +1,5 @@
 #UTA Require SSL and RESTRICT TO EMPLOYEES ONLY
 
-SSLEngine on
 SSLOptions +StrictRequire
 SSLRequireSSL
 SSLRequire %{HTTP_HOST} eq "library-test.uta.edu"
