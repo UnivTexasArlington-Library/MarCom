@@ -1,8 +1,9 @@
 #UTA Require SSL and RESTRICT TO EMPLOYEES ONLY
 
-RewriteEngine On 
-RewriteCond %{SERVER_PORT} 80 
-RewriteRule ^(.*)$ https://library-test.uta.edu/$1 [R,L]
+SSLOptions +StrictRequire
+SSLRequireSSL
+SSLRequire %{HTTP_HOST} eq "library-test.uta.edu"
+ErrorDocument 403 https://library-test.uta.edu/node/533
 
 AuthName "UT Arlington NetID"
 AuthType kerberos
