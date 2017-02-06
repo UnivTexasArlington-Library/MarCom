@@ -1,3 +1,11 @@
+#UTA RESTRICT TO EMPLOYEES ONLY
+SSLRequireSSL
+ErrorDocument 403 /node/533
+AuthBasicProvider ldap
+AuthType Basic
+AuthName "UT Arlington NetID"
+Require ldap-attribute utapersonentitlement=urn:mace:uta.edu:role:employee
+
 #
 # Apache/PHP/Drupal settings:
 #
