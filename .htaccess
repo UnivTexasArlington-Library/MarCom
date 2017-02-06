@@ -3,7 +3,7 @@
 SSLOptions +StrictRequire
 SSLRequireSSL
 SSLRequire %{HTTP_HOST} eq "library-test.uta.edu"
-ErrorDocument 403 /err_redirect.php
+ErrorDocument 403 /marcom/err_redirect.php
 
 AuthName "UT Arlington NetID"
 AuthType kerberos
@@ -11,7 +11,7 @@ KrbAuthRealms UTA.EDU
 KrbVerifyKDC off
 KrbMethodNegotiate off
 require valid-user
-<Files /err_redirect.php>
+<Files /marcom/err_redirect.php>
   AuthType none
 </Files>
 
