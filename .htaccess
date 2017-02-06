@@ -13,7 +13,7 @@ SSLOptions +StrictRequire
 #require valid-user
 
 SSLRequireSSL
-ErrorDocument 403 /uta/403-ssl-redirect.php
+ErrorDocument 403 https://library-test.uta.edu/node/533
 AuthBasicProvider ldap
 AuthType Basic
 AuthName "UT Arlington NetID"
