@@ -1,10 +1,13 @@
 #UTA RESTRICT TO EMPLOYEES ONLY
+
 SSLRequireSSL
-ErrorDocument 403 https://library.uta.edu/node/533
-AuthBasicProvider ldap
-AuthType Basic
+ErrorDocument 403 /node/533
 AuthName "UT Arlington NetID"
-Require ldap-attribute utapersonentitlement=urn:mace:uta.edu:role:employee
+AuthType kerberos
+KrbAuthRealms UTA.EDU
+KrbVerifyKDC off
+KrbMethodNegotiate off
+require valid-user
 
 #
 # Apache/PHP/Drupal settings:
