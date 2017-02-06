@@ -1,3 +1,16 @@
+#UTA Require SSL and RESTRICT TO EMPLOYEES ONLY
+
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://library-test.uta.edu/$1 [R,L]
+
+AuthName "UT Arlington NetID"
+AuthType kerberos
+KrbAuthRealms UTA.EDU
+KrbVerifyKDC off
+KrbMethodNegotiate off
+require valid-user
+
 
 #
 # Apache/PHP/Drupal settings:
@@ -149,13 +162,4 @@ DirectoryIndex index.php index.html index.htm
   Header always set X-Content-Type-Options nosniff
 </IfModule>
 
-#UTA RESTRICT TO EMPLOYEES ONLY
 
-SSLRequireSSL
-ErrorDocument 403 /node/533
-AuthName "UT Arlington NetID"
-AuthType kerberos
-KrbAuthRealms UTA.EDU
-KrbVerifyKDC off
-KrbMethodNegotiate off
-require valid-user
