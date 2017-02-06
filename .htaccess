@@ -1,16 +1,25 @@
 #UTA Require SSL and RESTRICT TO EMPLOYEES ONLY
 
-SSLOptions +StrictRequire
-SSLRequireSSL
-SSLRequire %{HTTP_HOST} eq "library-test.uta.edu"
-ErrorDocument 403 https://library-test.uta.edu/node/533
+#SSLOptions +StrictRequire
+#SSLRequireSSL
+#SSLRequire %{HTTP_HOST} eq "library-test.uta.edu"
+#ErrorDocument 403 https://library-test.uta.edu/node/533
 
+#AuthName "UT Arlington NetID"
+#AuthType kerberos
+#KrbAuthRealms UTA.EDU
+#KrbVerifyKDC off
+#KrbMethodNegotiate off
+#require valid-user
+
+SSLRequireSSL
+ErrorDocument 403 /uta/403-ssl-redirect.php
+AuthBasicProvider ldap
+AuthType Basic
 AuthName "UT Arlington NetID"
-AuthType kerberos
-KrbAuthRealms UTA.EDU
-KrbVerifyKDC off
-KrbMethodNegotiate off
-require valid-user
+Require ldap-attribute utapersonentitlement=urn:mace:uta.edu:role:employee
+
+
 
 
 #
