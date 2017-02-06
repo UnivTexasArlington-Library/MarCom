@@ -1,6 +1,6 @@
 #UTA Require SSL and RESTRICT TO EMPLOYEES ONLY
 
-#SSLOptions +StrictRequire
+SSLOptions +StrictRequire
 #SSLRequireSSL
 #SSLRequire %{HTTP_HOST} eq "library-test.uta.edu"
 #ErrorDocument 403 https://library-test.uta.edu/node/533
