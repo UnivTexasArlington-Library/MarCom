@@ -1,19 +1,19 @@
 #UTA Require SSL and RESTRICT TO EMPLOYEES ONLY
 
-#SSLOptions +StrictRequire
-#SSLRequireSSL
-#SSLRequire %{HTTP_HOST} eq "library-test.uta.edu"
-#ErrorDocument 403 /marcom/err_redirect.php
+SSLOptions +StrictRequire
+SSLRequireSSL
+SSLRequire %{HTTP_HOST} eq "library-test.uta.edu"
+ErrorDocument 403 /marcom/err_redirect.php
 
-#AuthName "UT Arlington NetID"
-#AuthType kerberos
-#KrbAuthRealms UTA.EDU
-#KrbVerifyKDC off
-#KrbMethodNegotiate off
-#require valid-user
-#<Files /marcom/err_redirect.php>
-#  AuthType none
-#</Files>
+AuthName "UT Arlington NetID"
+AuthType kerberos
+KrbAuthRealms UTA.EDU
+KrbVerifyKDC off
+KrbMethodNegotiate off
+require valid-user
+<Files /marcom/err_redirect.php>
+  AuthType none
+</Files>
 
 
 #
