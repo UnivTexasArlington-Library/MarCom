@@ -15,6 +15,6 @@ if (empty($_SERVER[ "HTTPS" ]))
 }
 
 # if we didn't redirect them, show the normal 403 error page
-include "/opt/libwebfs/web-libweb-nm-test/library-test.uta.edu/node/533";
+#include "/opt/libwebfs/web-libweb-nm-test/library-test.uta.edu/node/533";
 
 ?>
