@@ -1,22 +1,19 @@
-#UTA Require SSL and RESTRICT TO EMPLOYEES ONLY
+#UTA Require SSL and RESTRICT TO any valid user
 
-RewriteCond %{HTTPS} off
-# First rewrite to HTTPS:
-# Don't put www. here. If it is already there it will be included, if not
-# the subsequent rule will catch it.
-RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-# Now, rewrite any request to the wrong domain to use www.
-# [NC] is a case-insensitive match
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# 1. REQUIRE SSL
+SSLRequireSSL
 
+# 2. SET ERROR DOCUMENT TO SSL REDIRECT/403 ERROR SCRIPT
+ErrorDocument 403 /andrew/err_redirect.php
+
+# 3. RESTRICT TO SPECIFIED USERS
 AuthName "UT Arlington NetID"
-AuthType kerberos
+AuthType Kerberos
 KrbAuthRealms UTA.EDU
 KrbVerifyKDC off
 KrbMethodNegotiate off
-require valid-user
 
+Require valid-user
 
 #
 # Apache/PHP/Drupal settings:
