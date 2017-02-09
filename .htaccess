@@ -4,7 +4,7 @@
 SSLRequireSSL
 
 # 2. SET ERROR DOCUMENT TO SSL REDIRECT/403 ERROR SCRIPT
-ErrorDocument 403 /marcom/err_redirect.php
+ErrorDocument 403 /err_redirect.php
 
 # 3. RESTRICT TO SPECIFIED USERS
 AuthName "UT Arlington NetID"
