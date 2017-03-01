@@ -8,7 +8,7 @@
     <span class="new"><?php print drupal_ucfirst($new) ?></span>
   <?php endif; ?>
   
-	<span class="submitted"><?php // print $submitted ?></span>
+	<span class="submitted"><?php  print $submitted ?></span>
     <?php print render($title_prefix); ?>
     <h3<?php print $title_attributes; ?>><?php print $title ?></h3>
     <?php print render($title_suffix); ?>
