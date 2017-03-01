@@ -1946,7 +1946,7 @@ function comment_form($form, &$form_state, $comment) {
   elseif ($user->uid) {
     $form['author']['_author'] = array(
       '#type' => 'item',
-      '#title' => t('Your name'),
+      '#title' => t('Your name (optional, will show with your comment)'),
       '#markup' => theme('username', array('account' => $user)),
     );
     $form['author']['name'] = array(
