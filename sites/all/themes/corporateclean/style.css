@@ -549,5 +549,5 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
 
 /* Custom styles */
 
-/* don't display name field on comment form so I can add my own custom field */
-#comment-form .form-item-name {display: none;}
+/* don't display name field on comment form so I can add my own custom field
+#comment-form .form-item-name {display: none;} */
