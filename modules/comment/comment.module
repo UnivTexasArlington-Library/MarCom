@@ -1946,7 +1946,7 @@ function comment_form($form, &$form_state, $comment) {
   elseif ($user->uid) {
     $form['author']['_author'] = array(
       '#type' => 'item',
-      '#title' => t('Your name'),
+      '#title' => t('Your name (optional, will show with your comment)'),
       '#markup' => theme('username', array('account' => $user)),
     );
     $form['author']['name'] = array(
@@ -1957,7 +1957,7 @@ function comment_form($form, &$form_state, $comment) {
   else {
     $form['author']['name'] = array(
       '#type' => 'textfield',
-      '#title' => t('Your name'),
+      '#title' => t('Your name (optional, will show with your comment)'),
       '#default_value' => $author,
       '#required' => (!$user->uid && $anonymous_contact == COMMENT_ANONYMOUS_MUST_CONTACT),
       '#maxlength' => 60,
